@@ -10,7 +10,7 @@ const Spinner = () => {
 
 export default function Mapa() {
     const center = { lat: -34.397, lng: 150.644 };
-    const zoom = 4;
+    const zoom = 10;
 
     const [markerPosition, setMarkerPosition] = useState(center);
 
@@ -37,7 +37,8 @@ export default function Mapa() {
 
             <Wrapper apiKey={'AIzaSyBQQlEEl7OeuMLuUxjzgTnNHJpgSroZeLE'} render={render}>
                 <MapComponent onClick={onClick} center={center} zoom={zoom}>
-                    <Marker position={markerPosition} text="15" />
+                    <Marker position={{ lat: -34.317, lng: 150.614 }} text="6741" />
+                    <Marker position={markerPosition} iconType="stroke" text="15" />
                 </MapComponent>
             </Wrapper>
         </>

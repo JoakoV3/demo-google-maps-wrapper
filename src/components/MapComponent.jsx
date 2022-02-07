@@ -15,6 +15,7 @@ export default function MapComponent({ center, zoom, children, onClick, onIdle }
                 })
             );
         }
+        // eslint-disable-next-line
     }, [ref, map]);
 
     useEffect(() => {
@@ -44,167 +45,104 @@ export default function MapComponent({ center, zoom, children, onClick, onIdle }
 
 const CustomMapStyles = [
     {
-        'featureType': 'all',
-        'elementType': 'labels.text.fill',
-        'stylers': [
-            {
-                'saturation': 36,
-            },
-            {
-                'color': '#000000',
-            },
-            {
-                'lightness': 40,
-            },
-        ],
-    },
-    {
-        'featureType': 'all',
-        'elementType': 'labels.text.stroke',
-        'stylers': [
-            {
-                'visibility': 'on',
-            },
-            {
-                'color': '#000000',
-            },
-            {
-                'lightness': 16,
-            },
-        ],
-    },
-    {
-        'featureType': 'all',
-        'elementType': 'labels.icon',
-        'stylers': [
-            {
-                'visibility': 'off',
-            },
-        ],
-    },
-    {
-        'featureType': 'administrative',
-        'elementType': 'geometry.fill',
-        'stylers': [
-            {
-                'color': '#000000',
-            },
-            {
-                'lightness': 20,
-            },
-        ],
-    },
-    {
-        'featureType': 'administrative',
-        'elementType': 'geometry.stroke',
-        'stylers': [
-            {
-                'color': '#000000',
-            },
-            {
-                'lightness': 17,
-            },
-            {
-                'weight': 1.2,
-            },
-        ],
-    },
-    {
         'featureType': 'landscape',
-        'elementType': 'geometry',
         'stylers': [
             {
-                'color': '#000000',
+                'hue': '#FFBB00',
             },
             {
-                'lightness': 20,
-            },
-        ],
-    },
-    {
-        'featureType': 'poi',
-        'elementType': 'geometry',
-        'stylers': [
-            {
-                'color': '#000000',
+                'saturation': 43.400000000000006,
             },
             {
-                'lightness': 21,
+                'lightness': 37.599999999999994,
+            },
+            {
+                'gamma': 1,
             },
         ],
     },
     {
         'featureType': 'road.highway',
-        'elementType': 'geometry.fill',
         'stylers': [
             {
-                'color': '#000000',
+                'hue': '#FFC200',
             },
             {
-                'lightness': 17,
-            },
-        ],
-    },
-    {
-        'featureType': 'road.highway',
-        'elementType': 'geometry.stroke',
-        'stylers': [
-            {
-                'color': '#000000',
+                'saturation': -61.8,
             },
             {
-                'lightness': 29,
+                'lightness': 45.599999999999994,
             },
             {
-                'weight': 0.2,
+                'gamma': 1,
             },
         ],
     },
     {
         'featureType': 'road.arterial',
-        'elementType': 'geometry',
         'stylers': [
             {
-                'color': '#000000',
+                'hue': '#FF0300',
             },
             {
-                'lightness': 18,
+                'saturation': -100,
+            },
+            {
+                'lightness': 51.19999999999999,
+            },
+            {
+                'gamma': 1,
             },
         ],
     },
     {
         'featureType': 'road.local',
-        'elementType': 'geometry',
         'stylers': [
             {
-                'color': '#000000',
+                'hue': '#FF0300',
             },
             {
-                'lightness': 16,
-            },
-        ],
-    },
-    {
-        'featureType': 'transit',
-        'elementType': 'geometry',
-        'stylers': [
-            {
-                'color': '#000000',
+                'saturation': -100,
             },
             {
-                'lightness': 19,
+                'lightness': 52,
+            },
+            {
+                'gamma': 1,
             },
         ],
     },
     {
         'featureType': 'water',
-        'elementType': 'geometry',
         'stylers': [
             {
-                'color': '#0f2e19',
+                'hue': '#0078FF',
             },
             {
-                'lightness': 17,
+                'saturation': -13.200000000000003,
+            },
+            {
+                'lightness': 2.4000000000000057,
+            },
+            {
+                'gamma': 1,
+            },
+        ],
+    },
+    {
+        'featureType': 'poi',
+        'stylers': [
+            {
+                'hue': '#00FF6A',
+            },
+            {
+                'saturation': -1.0989010989011234,
+            },
+            {
+                'lightness': 11.200000000000017,
+            },
+            {
+                'gamma': 1,
             },
         ],
     },
