@@ -34,9 +34,10 @@ export default function Mapa() {
     return (
         <>
             <h2>Mapa</h2>
-            <Wrapper apiKey={''} render={render}>
+
+            <Wrapper apiKey={'AIzaSyBQQlEEl7OeuMLuUxjzgTnNHJpgSroZeLE'} render={render}>
                 <MapComponent onClick={onClick} center={center} zoom={zoom}>
-                    <Marker position={markerPosition} icon="https://emojis.slackmojis.com/emojis/images/1495224267/2309/popcorn_parrot.gif" />
+                    <Marker position={markerPosition} text="15" />
                 </MapComponent>
             </Wrapper>
         </>
